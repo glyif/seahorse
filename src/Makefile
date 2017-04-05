@@ -1,4 +1,2 @@
-all: seahorse
-
-seahorse: seahorse.c
-	gcc -Wall -pedantic -Wextra seahorse.c handle_file.c is_file.c -o seahorse
+all:
+	gcc -Wall -pedantic -Wextra main.c is_file.c handle_c_file.c handle_h_file.c delete_args.c -o seahorse
