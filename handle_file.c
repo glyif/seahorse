@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "header.h"
 
 /**
  * handle_file - Opens file, extract info, and writes into readme.md
@@ -10,6 +10,8 @@
 
 void handle_file(const char *file_name, const char *dir_name, FILE *rf)
 {
+	FILE *fc;
+
 	fprintf(rf, "### %s\n", file_name);
 
 	if (is_c_file(file_name))
@@ -21,7 +23,7 @@ void handle_file(const char *file_name, const char *dir_name, FILE *rf)
 			strcat(path, "/");
 		strcat(path, file_name);
 
-		FILE *fc = fopen(path, "r");
+		fc = fopen(path, "r");
 
 		if (fc)
 		{
