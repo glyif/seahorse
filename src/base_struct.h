@@ -13,3 +13,4 @@ typedef struct argument_docs
 	char descr[1024];
 	struct argument_docs *next;
 } argument;
+#endif
