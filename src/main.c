@@ -81,7 +81,7 @@ int main(int argc, char **argv)
 	}
 	else
 	{
-		printf("\nUsing\nrg <Direcory> <name of Readme file>\n");
+		printf("\nUsing\nseahorse <Directory> <name of Readme file>\n");
 	}
 	return (0);
 }

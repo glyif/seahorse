@@ -12,5 +12,5 @@ typedef struct argument_docs
 	char name[512];
 	char descr[1024];
 	struct argument_docs *next;
-} argument;
+} argument_docs;
 #endif
